@@ -6,6 +6,7 @@ float cm_to_in(void)
     printf("\nThe number of inches is %.2f\n", in);
     return in;
 }
+
 float in_to_m(void)
 {
     //ADAM NUSSBAUM
@@ -13,4 +14,12 @@ float in_to_m(void)
     float m = in * .0254;
     printf("\nThe number of meters is %.2f\n", m);
     return m;
+
+float ft_to_cm(void)
+//Ryan Jarogoske
+{
+    float ft = get_float("number of feet:");
+    float cm = ft / 30.48;
+    printf("\nThe number of centimeters is %.2f", cm);
+    return cm;
 }
